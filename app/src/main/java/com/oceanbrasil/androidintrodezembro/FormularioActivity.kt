@@ -1,5 +1,6 @@
 package com.oceanbrasil.androidintrodezembro
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -22,6 +23,7 @@ class FormularioActivity : AppCompatActivity() {
 
         val btSalvarForm = findViewById<Button>(R.id.btSalvarForm)
         val etNome = findViewById<EditText>(R.id.etNome)
+        val novaTelaIntent = Intent(this, ResultadoActivity::class.java)
         btSalvarForm.setOnClickListener {
             val nomeDigitado = etNome.text.toString()
             if (nomeDigitado.isBlank()) {
@@ -32,6 +34,7 @@ class FormularioActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(applicationContext,
                     nomeDigitado, Toast.LENGTH_LONG).show()
+                startActivity(novaTelaIntent)
             }
 
         }
