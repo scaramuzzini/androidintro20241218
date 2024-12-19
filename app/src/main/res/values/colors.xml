@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#F5F5F5</color>
+    <color name="primary_text">#333333</color>
+    <color name="button_background">#6200EE</color>
+    <color name="paysandu_light_blue">#6EC1E4</color> <!-- Azul claro (tom Paysandu) -->
+    <color name="paysandu_dark_blue">#005CA9</color> <!-- Azul escuro (tom Paysandu) -->
+
 </resources>
