@@ -32,8 +32,8 @@ class FormularioActivity : AppCompatActivity() {
                     , Toast.LENGTH_LONG).show()
                 etNome.error = "Nome obrigatório"
             } else {
-                Toast.makeText(applicationContext,
-                    nomeDigitado, Toast.LENGTH_LONG).show()
+
+                novaTelaIntent.putExtra("NOME_DIGITADO", nomeDigitado)
                 startActivity(novaTelaIntent)
             }
 
